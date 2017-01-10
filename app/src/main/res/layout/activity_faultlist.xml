@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_faultlist_progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center_horizontal"
+            android:indeterminate="false" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#fff59fff"
+            android:dividerHeight="18dp"
+            android:id="@+id/activity_faultlist_listView" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lastpage"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:alpha="0.3"
+        android:layout_weight="1"
+        android:id="@+id/activity_faultlist_lastpage" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nextpage"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.3"
+        android:layout_weight="1"
+        android:id="@+id/activity_faultlist_nextpage"
+        android:layout_alignParentEnd="false" />
+
+</RelativeLayout>
